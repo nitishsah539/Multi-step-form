@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f4ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  width: 900px;
+  height: 580px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.sidebar {
+  background: linear-gradient(to bottom, #03295a, #174a8b);
+  color: white;
+  height: 95%;
+  margin-top: 15px;
+  border-radius: 4px;
+  margin-left: 10px;
+  width: 250px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.step-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.circle {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  border: 1.5px solid white;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.circle.active {
+  background-color: #bfe2fd;
+  color: black;
+  border: none;
+}
+
+.step-text p {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.step-text h3 {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.form-section {
+  flex: 1;
+  padding: 50px 60px;
+  background-color: #fff;
+}
+
+.form-step {
+  display: none;
+}
+
+.form-step.active {
+  display: block;
+}
+
+.form-step h1 {
+  font-size: 24px;
+  color: #02295a;
+  margin-bottom: 10px;
+}
+
+.form-step p {
+  font-size: 15px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button.next-btn {
+  margin-top: 25px;
+  float: right;
+  background-color: #02295a;    
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#submit{
+    margin-top: 25px;
+  float: right;
+  background-color: #02295a;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}

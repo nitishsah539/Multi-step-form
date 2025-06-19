@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multi-step Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="sidebar">
+      <div class="step-box">
+        <div class="circle active" data-step="1">1</div>
+        <div class="step-text">
+          <p>STEP 1</p>
+          <h3>YOUR INFO</h3>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="circle" data-step="2">2</div>
+        <div class="step-text">
+          <p>STEP 2</p>
+          <h3>SELECT PLAN</h3>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="circle" data-step="3">3</div>
+        <div class="step-text">
+          <p>STEP 3</p>
+          <h3>ADD-ONS</h3>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="circle" data-step="4">4</div>
+        <div class="step-text">
+          <p>STEP 4</p>
+          <h3>SUMMARY</h3>
+        </div>
+      </div>
+    </section>
+    <section class="form-section">
+      <div class="form-step active" id="step-1">
+        <h1>Personal info</h1>
+        <p>Please provide your name, email address, and phone number.</p>
+        <label>Name</label>
+        <input type="text" placeholder="e.g. Stephen King" />
+        <label>Email Address</label>
+        <input type="email" placeholder="e.g. stephenking@lorem.com" />
+        <label>Phone Number</label>
+        <input type="tel" placeholder="e.g. +1 234 567 890" />
+        <button class="next-btn" data-next="2">Next Step</button>
+      </div>
+      <div class="form-step" id="step-2">
+        <h1>Select Plan</h1>
+        <p>Choose your plan:</p>
+        <div class="radio-group">
+          <label class="radio-option"><input type="radio" name="plan"> Basic</label>
+          <label class="radio-option"><input type="radio" name="plan"> Premium</label>
+        </div>
+        <button class="next-btn" data-next="3">Next Step</button>
+      </div>
+      <div class="form-step" id="step-3">
+        <h1>Add-ons</h1>
+        <p>Select optional add-ons:</p>
+        <div class="radio-group">
+          <label class="radio-option"><input type="checkbox"> Online Support</label>
+          <label class="radio-option"><input type="checkbox"> Extra Storage</label>
+        </div>
+        <button class="next-btn" data-next="4">Next Step</button>
+      </div>
+      <div class="form-step" id="step-4">
+        <h1>Summary</h1>
+        <p>Review your details and confirm.</p>
+        <button id="submit" onclick="alert('Form Submitted Successfully!')">Submit</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
